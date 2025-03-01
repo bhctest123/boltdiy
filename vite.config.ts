@@ -111,6 +111,9 @@ export default defineConfig((config) => {
       chrome129IssuePlugin(),
       config.mode === 'production' && optimizeCssModules({ apply: 'build' }),
     ],
+    server: {
+      allowedHosts: ['boltdiy-boltdiy.imzq6b.easypanel.host'],
+    },
     envPrefix: [
       'VITE_',
       'OPENAI_LIKE_API_BASE_URL',
